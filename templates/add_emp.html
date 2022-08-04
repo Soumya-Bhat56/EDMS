@@ -1,0 +1,53 @@
+<!doctype html>
+{%load static%}
+<link rel="stylesheet" href="{% static 'style.css'%}">
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ADD AN EMPLOYEE</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-+4j30LffJ4tgIMrq9CwHvn0NjEvmuDCOfk6Rpg2xg7zgOxWWtLtozDEEVvBPgHqE" crossorigin="anonymous">
+</head>
+    <body>
+    <div class="container">
+            <h1 class="add emp"> ADD AN EMPLOYEE <h1/>
+        <hr>
+    <form action="/add_emp" method="post">
+        {% csrf_token %}
+          <label for="first_name">First Name</label><br>
+          <input type="text" id="first_name" value="{{first_name}}"><br>
+          <label for="last_name">Last Name</label><br>
+          <input type="text" id="last_name" value="{{last_name}}"><br>
+          <label for="dept">Dept</label><br>
+          <input type="text" id="dept" value="{{dept}}"><br>
+          <label for="salary">Salary</label><br>
+          <input type="number" id="salary" value="{{salary}}"><br>
+          <label for="bonus">Bonus</label><br>
+          <input type="number" id="bonus" value="{{bonus}}"><br>
+          <label for="role">Role</label><br>
+          <input type="text" id="role" value="{{role}}"><br>
+          <label for="phone">Phone</label><br>
+          <input type="number" id="phone" value="{{phone}}"><br>
+          <label for="hire_date">Hire date</label><br>
+          <input type="number" id="hire_date" value="{{hire_date}}"><br>
+        <hr>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <body id="bg" style="background-image:url('{% static "Images\ems pic5.jpg" %}');>
+    </body>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/d
+</html>
+
+    <!-- Optional JavaScript; choose one of the two! -->ist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+    -->
+ 
+
